@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <img src="images/hot.jpg" alt="Restaurant Logo" width="250">
+    <h1>HOT Restaurant</h1>
+
+    <title>Contact Us | Restaurant Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+ 
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" id ="hamburger">&#9776;</div>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-page">
+        <div class="mySlides">
+            <h1>Contact Us</h1>
+
+            <div class="contact-container">
+                <!-- Google Map -->
+                <div id="map" class="map"></div>
+
+                <!-- Contact Form -->
+                <form class="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">SEND</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Follow us on: 
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a>
+        </p>
+        <p>Business Hours: Mon-Sun 10 AM - 10 PM</p>
+    </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJsEc78RCDesFFpiAvSsiUaC8muH7y0rM&callback=initMap" async defer></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
