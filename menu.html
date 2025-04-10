@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <img src="images/hot.jpg" alt="Restaurant Logo" width="250">
-    <h1>HOT Restaurant</h1>
+    <title>HOT Restaurant</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,95 +23,89 @@
 
     <!-- Hero Section -->
     <section class="hero">
-    
         <h1>Welcome to HOT Restaurant</h1>
         <img src="images/HOTbanner.jpg" alt="HOT Restaurant" style="width:100%">
-
     </section>
 
-    <!-- About Section -->
+    <!-- Menu Section -->
     <section class="contents">
         <h2>Our Menu</h2>
-        
-
-        
-        <!-- Slideshow Container -->
         <div class="container">
-            <div class="mySlides">
-            
-                <div class="card-category">
-                    <h2>Main Selections </h2>
-                    <div class="card-grid">
-                    
-                        <div class="card">
+            <div class="card-category">
+                <h2>Main Selections</h2>
+                <div class="card-grid">
+
+                    <div class="card">
                         <img src="images/mac.jpg" alt="Dish 1" class="card-img">
                         <div class="card-content">
-
-                        <h3>HOT MacnCheese</h3>
-                        <p>MacnCheese with ghost pepper flakes</p>
-                        <span>$30.99</span>
+                            <h3>HOT MacnCheese</h3>
+                            <p>MacnCheese with ghost pepper flakes</p>
+                            <span>$30.99</span>
+                            <button class="add-to-cart" data-name="HOT MacnCheese" data-price="30.99">Add to Cart</button>
                         </div>
                     </div>
+
                     <div class="card">
                         <img src="images/burger.jpg" alt="Dish 2" class="card-img">
                         <div class="card-content">
-
-                        <h3>HOT burger</h3>
-                        <p>American beef burger with carolina reaper slices stuffed inside.</p>
-                        <span>$50.99</span>
+                            <h3>HOT Burger</h3>
+                            <p>American beef burger with Carolina Reaper slices.</p>
+                            <span>$50.99</span>
+                            <button class="add-to-cart" data-name="HOT Burger" data-price="50.99">Add to Cart</button>
                         </div>
                     </div>
-                    
+
                     <div class="card">
                         <img src="images/meatball.jpg" alt="Dish 3" class="card-img">
                         <div class="card-content">
-
-                        <h3>HOT Meatballs</h3>
-                        <p>Classic meatballs with a HOT jalepeno twist inside.</p>
-                        <span>$10.99</span>
-                        </div>  
+                            <h3>HOT Meatballs</h3>
+                            <p>Classic meatballs with a HOT jalapeño twist.</p>
+                            <span>$10.99</span>
+                            <button class="add-to-cart" data-name="HOT Meatballs" data-price="10.99">Add to Cart</button>
+                        </div>
                     </div>
 
                     <div class="card">
                         <img src="images/steak.jpg" alt="Dish 4" class="card-img">
                         <div class="card-content">
-
-                        <h3>HOT Steak</h3>
-                        <p>Thick sirloin that brings the HEAT with Trinidad Moruga Scorpion pepper slices inside.</p>
-                        <span>$60.99</span>
+                            <h3>HOT Steak</h3>
+                            <p>Thick sirloin with Trinidad Moruga Scorpion heat.</p>
+                            <span>$60.99</span>
+                            <button class="add-to-cart" data-name="HOT Steak" data-price="60.99">Add to Cart</button>
                         </div>
                     </div>
-
 
                     <div class="card">
                         <img src="images/corndog.jpg" alt="Dish 5" class="card-img">
                         <div class="card-content">
-
-                        <h3>HOT Corndogs</h3>
-                        <p>A simple, and small American classic that spices things up.</p>
-                        <span>$10.99</span>
+                            <h3>HOT Corndogs</h3>
+                            <p>Classic corndogs that spice things up.</p>
+                            <span>$10.99</span>
+                            <button class="add-to-cart" data-name="HOT Corndogs" data-price="10.99">Add to Cart</button>
                         </div>
                     </div>
 
                     <div class="card">
                         <img src="images/pie.jpg" alt="Dish 6" class="card-img">
                         <div class="card-content">
-
-                        <h3>HOT Chocolate Pie</h3>
-                        <p>Bring sweet, savory, and spicy in this delectable dessert classic.</p>
-                        <span>$15.99</span>
+                            <h3>HOT Chocolate Pie</h3>
+                            <p>Sweet, savory, and spicy in one dessert.</p>
+                            <span>$15.99</span>
+                            <button class="add-to-cart" data-name="HOT Chocolate Pie" data-price="15.99">Add to Cart</button>
                         </div>
                     </div>
 
-
-
+                </div>
             </div>
-            
-
-            
         </div>
+    </section>
 
-        
+    <!-- Shopping Cart Section -->
+    <section class="shopping-cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p><strong>Total:</strong> $<span id="cart-total">0.00</span></p>
+        <button id="clear-cart">Clear Cart</button>
     </section>
 
     <!-- Footer -->
@@ -121,9 +114,7 @@
             <a href="#">Facebook</a> | 
             <a href="#">Instagram</a>
         </p>
-
         <p>Business Hours: Mon-Sun 10 AM - 10 PM</p>
-       
     </footer>
 
     <script src="script.js"></script>
