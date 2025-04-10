@@ -82,7 +82,7 @@ function updateCart() {
             total += item.price * item.quantity;
             const li = document.createElement("li");
             
-            // Create elements safely (XSS protection)
+            
             const itemText = document.createElement("span");
             itemText.textContent = `${item.name} (x${item.quantity}) - ${formatCurrency(item.price * item.quantity)}`;
             
@@ -109,7 +109,7 @@ function formatCurrency(amount) {
 
 //DOMContentLoaded listener
 document.addEventListener("DOMContentLoaded", function() {
-    // Hamburger menu
+
     const hamburger = document.querySelector(".hamburger");
     const navLinks = document.querySelector(".nav-links");
     
